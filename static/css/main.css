@@ -1,0 +1,167 @@
+
+body {
+  margin:0 auto;
+  font:400 95%/160% "Muli", helvetica, sans-serif;
+  width:960px;
+}
+
+#ui-datepicker-div {
+  background:#fff;
+  font-size:80%;
+  line-height:1.6em;
+  border:1px solid #ccc;
+}
+
+.fdate input {
+  font-size:80%;
+}
+
+nav {
+  font:400 100%/160% "Aldrich", helvetica, sans-serif;
+  padding:0.2em 1em 0 0.4em;
+  background:#0C0E37;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+a {
+  text-decoration:none;
+}
+
+nav a {
+  color:#DB806D;
+}
+
+#ng:hover, nav a:hover {
+  text-decoration:none;
+  color:#F4EFC5;
+}
+
+#usersearch {
+  float:right;
+}
+
+#loading {
+  position:absolute;
+  background:#fff;
+  top:25%;
+  left:40%;
+  display:none;
+  border-radius:10px;
+  padding:1em 2em;
+  font:400 180%/160% "Aldrich", helvetica, sans-serif;
+}
+
+#login-error {
+  display:none;
+}
+
+.table td {
+  text-align:center;
+}
+
+.table tr.success {
+  font-size:80%;
+}
+
+.userscore-table {
+  width:65%;
+}
+
+#avg, #overall, #ucountry {
+  font-size:120%;
+  font-family:"Aldrich";
+}
+
+#ng {
+  background:#0C0E37;
+  color:#DB806D;
+  padding:0.4em;
+  border-radius:5px;
+  font:400 110%/160% "Aldrich", helvetica, sans-serif;
+}
+
+nav li {
+  display:inline;
+}
+
+#game-intro {
+  background:transparent url("/static/img/space.jpg") 0 0 no-repeat;
+}
+
+#game-intro h1 {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+  letter-spacing: 10px;
+}
+
+#game-intro p {
+  text-shadow: 0px 1px 1px #333;
+  color: #eee;
+}
+
+#gmenu {
+  width:45%;
+}
+
+#gmenu li {
+  margin:0 1em 0 0;
+}
+
+#umenu li {
+  margin:0 0 0 1em;
+}
+
+#umenu {
+  float:right;
+}
+
+#game {
+  margin:0 auto;
+  width:896px;
+  height:504px;
+}
+
+footer {
+  margin:1em 0;
+  border-top:2px solid #ddd;
+}
+
+footer p {
+  font-size:75%;
+  text-align:center;
+}
+
+footer p.cr {
+  font-size:100%;
+  text-align:right;
+}
+
+article {
+  margin:1em 0;
+}
+
+article h1 {
+  font:400 200%/160% "Aldrich", helvetica, sans-serif;
+}
+
+article h1 small {
+  margin-left:2em;
+}
+
+article h2 {
+  margin:1em 0 0 0;
+  font: 400 160%/160% "Aldrich", helvetica, sans-serif;
+}
+
+dd {
+  margin:0 1em;
+}
+
+dt {
+  font-weight:bold;
+}
+
+input[type^="search"],#register input, #register select {
+  font:normal 95%/160% "Muli", helvetica, sans-serif;
+}

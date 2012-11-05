@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Le Orbit - Game</title>
+  <link href="http://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Muli:400,400italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/static/css/bootstrap-responsive.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/static/css/main.css" type="text/css" media="screen">
+  <script type="text/javascript" charset="utf-8" src="/static/js/processing-1.4.1.min.js"></script>
+</head>
+<body>
+<div id="loading"><p>Loading...</p><p><img src="/static/img/loader.gif" alt=""/></p></div>
+<div class="row">
+<nav>
+  <ul id="gmenu">
+    <li><a href="/">Home</a></li>
+    <li><a href="#game">Game</a></li>
+    <li><a href="#high-scores">High Scores</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+<header></header>
+<section></section>
+<br style="clear:both;" />
+<footer>
+  <p class="cr">faruken, 2012.</p>
+  <p>The Orbit game is developed with Processing.js. Best viewed with Lynx.</p>
+</footer>
+</div>
+
+<script type="text/x-underscore-template" id="user_template" charset="utf-8">
+<ul id="umenu">
+<% if (username != null) { %>
+  <li><a href="#high-scores/<%- username %>">Hello, <%- username %>!</a></li>
+  <li><a href="#logout">Logout</a></li>
+<% } else {%>
+  <li><a href="#login">Login</a></li>
+  <li><a href="#register">Register</a></li>
+<% } %>
+</ul>
+</script>
+
+<script type="text/x-underscore-template" id="game_template" charset="utf-8">
+<div id="game">
+  <canvas id="cgame" data-processing-sources="static/gp/bootstrap.pde static/gp/main.pde static/gp/player.pde static/gp/game.pde static/gp/orbit.pde static/gp/planet.pde static/gp/system.pde"></canvas>
+  <p><a id="ng" href="#">New Game</a></p>
+</div>
+</script>
+
+<script type="text/x-underscore-template" id="index_template" charset="utf-8">
+<div id="game-intro" class="hero-unit">
+  <h1>The Orbit</h1>
+  <p><br />Can you travel around the planets without crashing on them? Hit the monkey Win $50!</p>
+  <p><br /><br /><a class="btn btn-primary btn-large" href="#game">Play Now &rarr;</a></p>
+</div>
+</script>
+
+<script type="text/x-underscore-template" id="about_template" charset="utf-8">
+<article>
+  <h1>About</h1>
+  <p>The Orbit is a strangely amazing game which is written completely in Javascript. The idea is to keep the orbit alive as long as possible without crashing into planets.</p>
+  <p><small>The original game uses CouchDB and features saving/loading games, high-scores statistics etc. This version only has the game itself.</small></p>
+  <h2>Technology</h2>
+  <dl>
+    <dt>Developed by</dt>
+    <dd>faruken</dd>
+    <dt>Tools</dt>
+    <dd>Processing.js, Backbone.js, Underscore.js, Bootstrap, jQuery, HTML5, CouchDB</dd>
+    <dt>Space Image Credit:</dt>
+    <dd><a href="http://upload.wikimedia.org/wikipedia/commons/c/c2/NGC_3810_(captured_by_the_Hubble_Space_Telescope).jpg">NGC_3810_(captured_by_the_Hubble_Space_Telescope)</a></dd>
+  </dl>
+</article>
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/static/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/jquery.cookie.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/underscore-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/backbone-min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/static/js/app/main.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/static/js/gp-0.1.js"></script>
+</body>
+</html>
